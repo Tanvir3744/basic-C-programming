@@ -3,8 +3,12 @@ int main (){
     int sum = 0;
     int i;
     for (i = 0; i <= 100; i++){
-        sum += i;
+        if(i%2 == 0){
+            if(i == 20){
+                continue;
+            }
+            printf("%d\n", i);
+        }
     }
-    printf("%d", sum);
     return 0;
 }
